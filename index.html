@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6</title>
+    <link rel="stylesheet" href="../styles/style_portfolio.css"> 
+</head>
+
+<body id="body">
+    <!--heading-->
+    <header>
+    <h2>Maddy portfolio</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Skill</a>
+    </nav>
+    </header>
+    <section style="text-align: center; margin-top: 10px;">
+  <img src="../image/Madhavan_studio.jpeg" alt="Madhavan Profile Picture" width="180" height="180" style="border-radius: 50%; border: 3px solid #4a90e2; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+</section>
+
+    <main>
+        <!--Short intro-->
+        <div class="card">
+       <h3>Short intro</h3>
+<section class="card-section">
+  <p>
+    I am <strong>Madhavan</strong>, a passionate and curious learner from <strong>Ramanathapuram</strong>. 
+    I always believe in growing through knowledge and humility. I'm respectful, kind-hearted, and believe in 
+    lifting others as I grow. My goal is to build useful and beautiful things on the web, and one day, 
+    become a full-stack developer who contributes to real-world impact.
+  </p>
+  <p>
+    Apart from coding, I enjoy learning about new technologies, helping my friends solve problems, 
+    and exploring creative ideas. I believe in hard work, simplicity, and continuous self-improvement.
+  </p>
+</section>
+</div>
+<!--Technical skill-->
+<div class="card">
+<h3>Technical Skill</h3>
+<section class="card-section">
+  <ul style="line-height: 1.8;">
+    <li><strong>Frontend:</strong> HTML5, CSS3, basic JavaScript</li>
+    <li><strong>Backend:</strong> Java (Core concepts), Servlet basics</li>
+    <li><strong>Databases:</strong> MySQL, PostgreSQL</li>
+    <li><strong>Tools:</strong> VS Code, Git (basic), MS Office</li>
+    <li><strong>Others:</strong> Basic understanding of Responsive Design and Web Accessibility</li>
+
+  </ul>
+  <p style="margin-top: 10px;">
+    I'm currently improving my JavaScript and aiming to learn frameworks like React in the future. 
+    I enjoy turning ideas into real digital projects and exploring the logic behind web applications.
+  </p>
+</section>
+</div>
+       
+        <table>
+            <caption>Curriculum</caption>
+            <thead>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Board</th>
+                    <th>Institution</th>
+                    <th>year</th>
+                    <th>Percentage</th>
+                 </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td> 10th</td>
+                <td>Stateboard</td>
+                <td>Syed Ammal Hr Sec School</td>
+                <td>2019</td>
+                <td>74%</td>
+                </tr>
+                <tr>
+                <td> 12th</td>
+                <td>Stateboard</td>
+                <td>Syed Ammal Matric Hr Sec School
+                <td>2021</td>
+                <td>80%</td>
+                </tr>
+                <tr>
+                <td>Bsc IT</td>
+                <td>Alagappa University</td>
+                <td>Syed ammal arts and Science college</td>
+                <td>2024</td>
+                <td>68%</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    
+    <!--Certification-->
+ <details>
+    <summary>Certification</summary>
+    <p>Certified in <b>Python</b></p>
+    <p>Certified in <b>Html</b></p>
+    <p>Certified in <b>Msoffice</b></p>
+ </details><br>
+ <!--achievement-->
+ 
+ <details>
+    <summary>Achievement</summary>
+    <p>Take seminar about <em>Ai</em></p>
+    <p>Participate Mime about <em>No Drug</em></p>
+    <p>Take seminar about <em>AR & VR</em></p>
+ </details>
+
+ <!--darkmode or light mode-->   
+    <label for="theme">Choose Theme:</label>
+    <select id="theme">
+        <option>Darkmode</option>
+        <option selected>Lightmode</option>
+        <option>Attractive mode</option>
+    </select>
+    </main>
+    <footer>
+    <hr>
+    <p>Made with ❤️ by Madhavan</p>
+    <p>📧 Email: <a href="mwaran934@gmail.com">mwaran934@gmail.com</a></p>
+    <p>📍 Location: Ramanathapuram, Tamil Nadu</p>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+</footer>
+<script>
+        
+const themeSelector = document.getElementById("theme");
+const body = document.getElementById("body");
+
+themeSelector.addEventListener("change", function () {
+    const selected = themeSelector.value;
+
+    // Remove all theme classes first
+    body.classList.remove("darkmode", "lightmode", "attractivemode");
+
+    // Add selected theme class
+    
+    if (selected === "Darkmode") {
+        body.classList.add("darkmode");
+    } else if (selected === "Lightmode") {
+        body.classList.add("lightmode");
+    } else if (selected === "Attractive mode") {
+        body.classList.add("attractivemode");
+    }
+});
+</script>
+</body>
+</html>
